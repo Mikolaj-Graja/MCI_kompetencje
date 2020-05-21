@@ -48,10 +48,10 @@
 
         .centerText {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 0.5vw;
+            font-size: 8px;
             text-transform: uppercase;
             z-index: 2;
             color: white;
@@ -61,20 +61,45 @@
 
         .center {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
-            max-width: 15%;
+            max-width: 290px;
         }
 
         .icons {
             position: absolute;
-            max-width: 20%;
+            max-width: 410px;
             /* height: 67vh; */
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 2;
         }
+
+        .circle {
+            /* display: none; */
+            position: absolute;
+            max-width: 350px;
+            /* height: 67vh; */
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .circles {
+            /* background-color: white; */
+            z-index: 2;
+        }
+
+        .circleText {
+            font-family: 'Hind', sans-serif;
+            font-size: xx-small;
+            letter-spacing: -0.8px;
+        }
+
+
 
         footer {
             display: flex;
@@ -109,7 +134,7 @@
         }
 
         footer form {
-            width: 30vw;
+            width: 600px;
             display: flex;
             flex-direction: column;
         }
@@ -125,7 +150,7 @@
             margin: 4px 4px 4px 4px;
             padding: 8px 7px;
             border-radius: 1%;
-            border: 2px transparent;
+            border: none;
             border-radius: 3px;
             flex-grow: 1;
         }
@@ -182,8 +207,8 @@
             /* width: 50vw;
             height: 45; */
             width: 1080px;
-            height: 855px;
-            top: -167%;
+            height: 860px;
+            top: -177%;
             z-index: -1;
         }
 
@@ -201,10 +226,22 @@
     </header>
     <main>
         <div class="centerText">poznaj nasze kompetencje</div>
-        <img class="icons" src="images/circles.png" alt="">
+        <img class="icons circles" src="images/circlesW.png" alt="">
         <img class="icons" src="images/icons.png" alt="icons">
+        <img class="circle" src="images/circle.png" alt="">
         <img class="center" src="images/CenterFull.png" alt="center">
-
+        <div class="circleText one">Zarządzanie projektami</div>
+        <div class="circleText two">Dotacje i granty międzynarodowe</div>
+        <div class="circleText three">Międzynarodowa księgowość, kadry i podatki</div>
+        <div class="circleText four">Prawo międzynarodowe</div>
+        <div class="circleText five">Finansowanie handlu międzynarodowego</div>
+        <div class="circleText six">Pozyskiwanie inwestorów (M&A)</div>
+        <div class="circleText seven">Nieruchomości</div>
+        <div class="circleText eight">Komercjalizacja własności intelektualnej</div>
+        <div class="circleText nine">Podnoszenie produktywności</div>
+        <div class="circleText ten">Crowdfunding</div>
+        <div class="circleText eleven">Ubezpieczenia międzynarodowe</div>
+        <div class="circleText twelve">Marketing 360º</div>
     </main>
 
     <footer>
