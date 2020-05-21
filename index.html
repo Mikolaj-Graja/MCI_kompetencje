@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>Nasze kompetencje</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            padding-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: "Hind", sans-serif;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-family: "roboto", sans-serif;
+            font-size: small;
+        }
+
+
+        main {
+            position: relative;
+            height: 65vh;
+        }
+
+        .centerText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.5vw;
+            text-transform: uppercase;
+            z-index: 2;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 15%;
+        }
+
+        .icons {
+            position: absolute;
+            max-width: 20%;
+            /* height: 67vh; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            /* height: 320px; */
+            height: 33.5vh;
+            top: 66vh;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: #274291;
+            color: white;
+            font-family: "Hind", sans-serif;
+            padding: 22px 0 42px 0;
+            overflow: hidden;
+        }
+
+
+        footer h2 {
+            font-size: larger;
+            padding-bottom: 8px;
+        }
+
+        footer p {
+            font-family: "roboto", sans-serif;
+            font-size: small;
+            padding-bottom: 8px;
+            font-weight: 300;
+        }
+
+        footer form {
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rows {
+            display: flex;
+            position: relative;
+        }
+
+        footer .smallInput {
+            display: block;
+            background-color: white;
+            margin: 4px 4px 4px 4px;
+            padding: 8px 7px;
+            border-radius: 1%;
+            border: 2px transparent;
+            border-radius: 3px;
+            flex-grow: 1;
+        }
+
+        #textMessage {
+            width: auto;
+            margin: 4px 4px;
+            padding: 4px 0px 40px 8px;
+            border-radius: 3px;
+        }
+
+        .checkLabel {
+            position: relative;
+            display: flex;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 0;
+            font-size: smaller;
+        }
+
+        .checkLabel input,
+        .checkLabel label {
+            display: inline-block;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #339ed7;
+        }
+
+        footer form button {
+            position: relative;
+            width: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #35a8e0;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            padding: 9px 30px;
+            border-radius: 5px;
+            font-size: x-small;
+            font-family: "roboto bold", sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+
+        .footerImage {
+            position: absolute;
+            /* width: 50vw;
+            height: 45; */
+            width: 1080px;
+            height: 855px;
+            top: -167%;
+            z-index: -1;
+        }
+
+        .footerImage img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Obszary naszych kompetencji</h1>
+        <p>Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</p>
+    </header>
+    <main>
+        <div class="centerText">poznaj nasze kompetencje</div>
+        <img class="icons" src="images/circles.png" alt="">
+        <img class="icons" src="images/icons.png" alt="icons">
+        <img class="center" src="images/CenterFull.png" alt="center">
+
+    </main>
+
+    <footer>
+        <h2>Skontaktuj się z nami</h2>
+        <p>Zadzwoń +48 535 015 835 lub wypełnij formularz.</p>
+        <form action="https://mikolaj-graja.github.io/github.io/">
+            <div class="rows">
+                <input class="smallInput" type="text" placeholder="Imię i Nazwisko">
+                <input class="smallInput" type="tel" placeholder="Telefon">
+                <input class="smallInput" type="email" placeholder="Email">
+            </div>
+
+            <div class="rows">
+                <input class="smallInput" type="text" placeholder="Firma">
+                <input class="smallInput" type="number" placeholder="Ilość pracowników">
+                <input class="smallInput" type="number" placeholder="Roczny dochód firmy">
+            </div>
+            <input name="textMessage" id="textMessage" placeholder="Wiadomość">
+            <div class="checkLabel">
+                <input id="check" type="checkbox">
+                <label for="check">Zapozanałem(-łam) się z <a href=""> Polityką prywatności</a> oraz z <a href="">
+                        Zastrzeżeniami
+                        prawnymi</a></label>
+            </div>
+            <button>Wyślij</button>
+        </form>
+        <div class="footerImage"><img src="images\footerIMG.png" alt=""></div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+</html>
