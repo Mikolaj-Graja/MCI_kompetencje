@@ -32,23 +32,26 @@
             font-family: "Hind", sans-serif;
             font-size: x-large;
             font-weight: 500;
+            letter-spacing: -2px;
         }
 
         header p {
             margin-top: 8px;
             font-family: "roboto", sans-serif;
-            font-size: small;
+            font-size: x-small;
+            font-weight: 300;
+            letter-spacing: -0.5px;
         }
 
 
         main {
             position: relative;
-            height: 65vh;
+            height: 58.5vh;
         }
 
         .centerText {
             position: absolute;
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 8px;
@@ -60,7 +63,7 @@
 
         .center {
             position: absolute;
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 290px;
@@ -70,7 +73,7 @@
             position: absolute;
             max-width: 410px;
             /* height: 67vh; */
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
@@ -81,7 +84,7 @@
             position: absolute;
             max-width: 350px;
             /* height: 67vh; */
-            top: 45%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
@@ -92,20 +95,28 @@
             z-index: 2;
         }
 
+        /* 
         .circleText {
             font-family: 'Hind', sans-serif;
             font-size: xx-small;
             letter-spacing: -0.8px;
-        }
+        } */
 
         .circleTextIMG {
             position: absolute;
-            max-width: 710px;
+            width: 710px;
             /* height: 67vh; */
-            top: 45%;
-            left: 51.5%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
+        }
+
+        .circleTextIMG img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            left: 3.7%;
         }
 
 
@@ -215,8 +226,8 @@
             /* width: 50vw;
             height: 45; */
             width: 1080px;
-            height: 860px;
-            top: -177%;
+            height: 890px;
+            top: -182%;
             z-index: -1;
         }
 
@@ -224,13 +235,87 @@
             width: 100%;
             height: 100%;
         }
+
+        @media screen and (max-width:1024px) {
+
+            footer {
+                width: 90%;
+                height: 70vh;
+            }
+
+            footer form {
+                width: 99%;
+            }
+
+            footer div {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            body {
+                height: auto;
+            }
+
+            main {
+                position: relative;
+                height: 40vh;
+
+            }
+
+            footer {
+                top: 50vh;
+                height: 53vh;
+            }
+
+            .center {
+                width: 130px;
+            }
+
+            .icons {
+                width: 180px;
+            }
+
+            .circle {
+                width: 150px;
+            }
+
+            .circleTextIMG {
+                /* display: none; */
+                width: 330px;
+            }
+
+            .centerText {
+                font-size: 4px;
+            }
+
+            footer .smallInput {
+                padding: 2px 4px;
+            }
+
+            #textMessage {
+                padding: 4px 0 20px 4px;
+            }
+
+            footer input,
+            .checkLabel {
+                font-size: x-small;
+            }
+
+            footer form button {
+                font-size: xx-small;
+                padding: 5px;
+                width: 60px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Obszary naszych kompetencji</h1>
-        <p>Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</p>
+        <p>Pomagamy uczyć się na błędach Innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</p>
     </header>
     <main>
         <div class="centerText">poznaj nasze kompetencje</div>
@@ -238,7 +323,7 @@
         <img class="icons" src="images/icons.png" alt="icons">
         <img class="circle" src="images/circle.png" alt="">
         <img class="center" src="images/CenterFull.png" alt="center">
-        <img class="circleTextIMG" src="images/textCircle.png" alt="txt">
+        <div class="circleTextIMG"><img src="images/textCircle.png" alt="txt"></div>
     </main>
 
     <footer>
